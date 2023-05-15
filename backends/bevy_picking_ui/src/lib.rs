@@ -36,7 +36,7 @@ pub fn ui_picking(
             &FocusPolicy,
             Option<&CalculatedClip>,
         ),
-        Without<PointerId>,
+        (With<Interaction>, Without<PointerId>),
     >,
     mut output: EventWriter<PointerHits>,
 ) {
