@@ -34,7 +34,7 @@ bevy_utils = { version = "0.13", default-features = false }
 bevy_window = { version = "0.13", default-features = false }
 
 bevy_eventlistener = "0.7"
-bevy_egui = { optional = true, version = "0.25" }
+bevy_egui = { optional = true, version = "0.27" }
 bevy_rapier3d = { optional = true, version = "0.25" }
 bevy_xpbd_3d = { optional = true, version = "0.4" }
 
@@ -97,6 +97,7 @@ backend_sprite = ["bevy_picking_sprite", "bevy_picking_highlight/sprite"]
 backend_bevy_ui = ["bevy_picking_ui", "bevy_ui"]
 backend_egui = ["bevy_picking_egui", "bevy_egui"]
 backend_xpbd = ["bevy_picking_xpbd", "bevy_xpbd_3d"]
+bevy_egui = ["dep:bevy_egui"]
 
 [[example]]
 name = "rapier"
